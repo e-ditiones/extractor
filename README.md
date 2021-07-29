@@ -93,7 +93,7 @@ python alto4_into_TEI.py 'IIIF_GALLICA_ARK' 'NAME_SURNAME_ORCID' 'PUBLISHER' 'LI
 * `'PUBLISHER'` is the name of the project publishing the document.
 * `'LINK_TO_PUBLIHER_INFO'` is the url of the project.
 * `'AVAILABILTY'`, it is a mandatory argument with specific entries. They are 'cc by', 'cc by-sa', 'cc by-nb',
- 'cc by-nc', 'cc by-nc-sa' or 'cc by-nc-nd' (cf. [creattive commons licences](https://creativecommons.org).
+ 'cc by-nc', 'cc by-nc-sa' or 'cc by-nc-nd' (cf. [creattive commons licences](https://creativecommons.org)).
 * `-e` is an option that gives a extra xml file with the list of all "Decoration", "Figure" and "DropCapital" zones and their
 IIIF link.
 
