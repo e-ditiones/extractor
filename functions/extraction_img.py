@@ -13,7 +13,7 @@ def extraction_image(doc_final, titre, editeur_scientifique, id_facsimile):
     :param id_facsimile: str
         Id of the book
     """
-    dossier_resultat_transformation = "./" + id_facsimile + "/xml/transformation_TEI/"
+    dossier_resultat_transformation = "./" + id_facsimile + "/xml/TEI/"
     document_final = ET.parse(doc_final)
     racine = document_final.getroot()
     # <grpList>
