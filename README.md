@@ -4,7 +4,7 @@ Python script to transform ALTO4 files into XML-TEI files.
 
 <b>Warning</b>: For now, this pipeline only works with
 * files annotated with the [SegMonto controlled vocabulary](https://github.com/SegmOnto)
-* ALTO files created with [eScriptorium](https://gitlab.inria.fr/scripta/escriptorium). Data and models for the latter can be found in the [OCR17plus repo](https://github.com/e-ditiones/OCR17plus). 
+* ALTO files created with [eScriptorium](https://gitlab.inria.fr/scripta/escriptorium). Data and models for the latter can be found in the [OCR17plus](https://github.com/e-ditiones/OCR17plus) repo. 
 * Prints found on [Gallica](https://gallica.bnf.fr) and their IIIF manifest.
 
 ## Structure of the repo
