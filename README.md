@@ -125,16 +125,20 @@ python transformation.py 'bpt6k73945k' 'Simon_Gabay_0000-0001-9094-4475' 'E-diti
  * one with just the decorations, only if the `-e` parameter has been used
 3. Images are renamed, with the same name that the ALTO files
 
-## Thanks to
-Thanks to Simon Gabay, Juliette ❤️ Janes and Alexandre ❤️ Bartz for their help and work.
+## Credits
 
-## Contacts
+Scripts prepared by Claire Jahan with the help of Simon Gabay, as part of the [_E-ditiones_](https://github.com/e-ditiones) project.
+
+## Contact
 Claire Jahan : claire.jahan[at]chartes.psl.eu
 
 Simon Gabay : Simon.Gabay[at]unige.ch
 
 ## Cite this dataset
 Claire Jahan and Simon Gabay, _Extractor - From ALTO to TEI_, 2021, Paris/Geneva: ENS Paris/UniGE, https://github.com/e-ditiones/extractor.
+
+## Thanks to
+Thanks to Simon Gabay, Juliette ❤️ Janes and Alexandre ❤️ Bartz for their help and work.
 
 ## Licence
 Data is CC-BY, except images which come from Gallica (cf. [conditions d'utilisation](https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica)).
