@@ -74,8 +74,8 @@ pip install -r requirements.txt
 ## Run
 
 0. Please note that you need to have two separate folders:
- * one with all the images (`cp PATH_TO FOLDER/*png images`)
- * one with all the XML files (`cp PATH_TO FOLDER/*xml altos`)
+ * one with all the images (in case you need to create one, use `cp PATH_TO FOLDER/*png images` in the terminal)
+ * one with all the XML files (in case you need to create one, use `cp PATH_TO FOLDER/*xml altos` in the terminal)
 2. Import, annotate, transcribe and correct data on eScriptorium. Downnload them as ALTO v4 files with the images.
 3. Control the consistency use `strings_checking.py`:
 ```console
