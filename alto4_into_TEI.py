@@ -3,7 +3,7 @@ import os
 import errno
 from functions.recuperation_donnees_SPARQL import recup_data_sparql
 from functions.Transkribus_ABBYY_native import tes
-from functions.récupération_données_manifest import recuperation_donnees_manifest
+from functions.recuperation_données_manifest import recuperation_donnees_manifest
 from functions.extraction_img import extraction_image
 from functions.creation_intermediaire import creation_interm
 from functions.cleaned_file import clean_file
