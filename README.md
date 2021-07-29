@@ -99,7 +99,7 @@ for example:
 python transformation.py 'bpt6k73945k' 'Simon_Gabay_0000-0001-9094-4475' 'E-ditiones' 'github.com/e-ditiones' -a 'cc by' -e
 ```
 
-4. The script will ask the path to ALTO4 files and images directory: provide a
+4. The script will ask the path to ALTO4 files and images directory: provide a path
 
 5. The script returns a directory with the following structure:
 
@@ -133,7 +133,7 @@ Claire Jahan : claire.jahan[at]chartes.psl.eu
 Simon Gabay : Simon.Gabay[at]unige.ch
 
 ## Cite this dataset
-Claire Jahan and Simon Gabay, _Transformation pipeline for XML-ALTO4 files from eScriptorium_, 2021, Paris: ENS Paris,  https://github.com/Heresta/datasetsOCRSegmenter17.
+Claire Jahan and Simon Gabay, _Extractor - From ALTO to TEI_, 2021, Paris/Geneva: ENS Paris/UniGE, https://github.com/e-ditiones/extractor.
 
 ## Licence
 Data is CC-BY, except images which come from Gallica (cf. [conditions d'utilisation](https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica)).
