@@ -118,11 +118,11 @@ python transformation.py 'bpt6k73945k' 'Simon_Gabay_0000-0001-9094-4475' 'E-diti
       ├──…
       └── author_title_date_ID_folio.jpg
 ```
-* ALTO files (one per page in the original document) are cleaned and renamed
-* 2 TEI files are created:
+1. ALTO files (one per page in the original document) are cleaned and renamed
+2. 2 TEI files are created:
  * one complete
  * one with just the decorations, only if the `-e` parameter has been used
-* Images are renamed, with the same name that the ALTO files
+3. Images are renamed, with the same name that the ALTO files
 
 ## Thanks to
 Thanks to Simon Gabay, Juliette ❤️ Janes and Alexandre ❤️ Bartz for their help and work.
