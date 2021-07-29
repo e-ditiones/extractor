@@ -90,9 +90,10 @@ is no ORCID, it must be written like 'NAME_SURNAME_'.
  'cc by-nc', 'cc by-nc-sa' or 'cc by-nc-nd' (cf. [creattive commons licences](https://creativecommons.org).
 * `-e` is an option that gives a extra xml file with the list of all "Decoration", "Figure" and "DropCapital" zones and their
 IIIF link.
+
 4. The script will ask the path to ALTO4 files and images directory.
 
-The script returns a directory with the following structure:
+5. The script returns a directory with the following structure:
 
 ```
 ├── xml
