@@ -73,26 +73,36 @@ pip install -r requirements.txt
 
 ## Run
 
-1. Import, annotate, transcribe and correct data on eScriptorium. Downnload them as ALTO v4 files with the images.
-2. Control the consistency use `strings_checking.py`:
+0. Please note that you need to have two separate folders:
+ * one with all the images (`cp PATH_TO FOLDER/*png images`)
+ * one with all the XML files (`cp PATH_TO FOLDER/*xml altos`)
+2. Import, annotate, transcribe and correct data on eScriptorium. Downnload them as ALTO v4 files with the images.
+3. Control the consistency use `strings_checking.py`:
 ```console
 python strings_checking.py PATH_TO_THE_ALTO4_DIRECTORY
 ```
 In case you encountered a problem, correct lines or zones errors
 
 3. Transform the data with `alto4_into_TEI.py`
-```concole
+```console
 python alto4_into_TEI.py 'IIIF_GALLICA_ARK' 'NAME_SURNAME_ORCID' 'PUBLISHER' 'LINK_TO_PUBLIHER_INFO' 'AVAILABILITY' -e
 ```
 
-* `'NAME_SURNAME_ORCID'` must be written with underscores instead of blanks to be correctly treated. And if there
-is no ORCID, it must be written like 'NAME_SURNAME_'.
+* `IIIF_GALLICA_ARK`: provide the qualifier (`btv1b86262420` in `ark:/12148/btv1b86262420`)
+* `'NAME_SURNAME_ORCID'` must be written with underscores instead of blanks to be correctly treated. And if you do not have an ORCID, use 'NAME_SURNAME_'.
+* `'PUBLISHER'` is the name of the project publishing the document.
+* `'LINK_TO_PUBLIHER_INFO'` is the url of the project.
 * `'AVAILABILTY'`, it is a mandatory argument with specific entries. They are 'cc by', 'cc by-sa', 'cc by-nb',
  'cc by-nc', 'cc by-nc-sa' or 'cc by-nc-nd' (cf. [creattive commons licences](https://creativecommons.org).
 * `-e` is an option that gives a extra xml file with the list of all "Decoration", "Figure" and "DropCapital" zones and their
 IIIF link.
 
-4. The script will ask the path to ALTO4 files and images directory.
+for example:
+```console
+python transformation.py 'bpt6k73945k' 'Simon_Gabay_0000-0001-9094-4475' 'E-ditiones' 'github.com/e-ditiones' -a 'cc by' -e
+```
+
+4. The script will ask the path to ALTO4 files and images directory: provide a
 
 5. The script returns a directory with the following structure:
 
