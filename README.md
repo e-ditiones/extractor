@@ -82,14 +82,14 @@ In case you encountered a problem, correct lines or zones errors
 
 3. Transform the data with `alto4_into_TEI.py`
 ```console
-python alto4_into_TEI.py 'IIIF_GALLICA_ARK' 'NAME_SURNAME_ORCID' 'PUBLISHER' 'LINK_TO_PUBLIHER_INFO' 'AVAILABILITY' -e
+python alto4_into_TEI.py 'IIIF_GALLICA_ARK' 'NAME_SURNAME_ORCID' 'PUBLISHER' 'LINK_TO_PUBLIHER_INFO' -a 'AVAILABILITY' -e
 ```
 
 * `IIIF_GALLICA_ARK`: provide the qualifier (`btv1b86262420` in `ark:/12148/btv1b86262420`)
 * `'NAME_SURNAME_ORCID'` must be written with underscores instead of blanks to be correctly treated. And if you do not have an ORCID, use 'NAME_SURNAME_'.
 * `'PUBLISHER'` is the name of the project publishing the document.
 * `'LINK_TO_PUBLIHER_INFO'` is the url of the project.
-* `'AVAILABILTY'`, it is a mandatory argument with specific entries. They are 'cc by', 'cc by-sa', 'cc by-nb',
+* `-a 'AVAILABILTY'`, it is a mandatory argument with specific entries. They are 'cc by', 'cc by-sa', 'cc by-nb',
  'cc by-nc', 'cc by-nc-sa' or 'cc by-nc-nd' (cf. [creattive commons licences](https://creativecommons.org)).
 * `-e` is an option that gives a extra xml file with the list of all "Decoration", "Figure" and "DropCapital" zones and their
 IIIF link.
