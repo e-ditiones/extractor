@@ -12,6 +12,7 @@ Python script to transform ALTO4 files into XML-TEI files.
 ```
 ├── functions
 │     ├── cleaned_file.py
+│     ├── count_illustration.py
 │     ├── count_words.py
 │     ├── creation_intermediaire.py
 │     ├── extraction_img.py
@@ -39,7 +40,6 @@ Python script to transform ALTO4 files into XML-TEI files.
 │     └── README.md
 ├── alto4_into_TEI.py
 ├── strings_checking.py
-├── count_illustration.py
 └── README.md
 
 ```
@@ -53,9 +53,6 @@ The directory ``functions`` contains several python files used in `alto4_into_TE
 
 The ``ODD`` directory can be found an ODD based on the work of Alexandre Bartz and Simon Gabay, and especially the first of the three 
 levels of transcription in XML-TEI (_i.e._ [E-ditiones/ODD17](https://github.com/e-ditiones/ODD17)).
-
-``count_illustration.py`` is a script to count pages, decorations, dropcapitals and figures after TEI transformation. It has to be used on 
-`extrated_img.xml` and the path to this file has to be indicated directly into the code.
 
 `example` directory contains an example of result that this pipeline creates.
 
@@ -108,14 +105,22 @@ python transformation.py 'bpt6k73945k' 'Simon_Gabay_0000-0001-9094-4475' 'E-diti
 
 ```
 ├── xml
-│     ├── standardisation
-│     │      └── all ALTO4 files renamed thanks to a created id of the facsimile and normalized
-│     └── transformation_TEI
-│            ├── output.xml
-│    	     └── extraction_img.py
+│     ├── ALTOs
+│     │      ├──author_title_date_ID_folio.xml
+│     │      ├──…
+│     │      └── author_title_date_ID_folio.xml
+│     └── TEI
+│            ├── author_title_date_ID.xml
+│            ├── author_title_date_ID_decorations.xml
+│    	       └── extraction_img.py
 └── img
-      └── all images renamed thanks to a created id of the facsimile
+      ├──author_title_date_ID_folio.jpg
+      ├──…
+      └── author_title_date_ID_folio.jpg
 ```
+* ALTO files are cleaned and renamed, one per page
+* 2 TEI files are created: one complete, one with just the decorations if the `-e` parameter has been used
+* Images are renamed, with the same name that the ALTO files
 
 ## Thanks to
 Thanks to Simon Gabay, Juliette ❤️ Janes and Alexandre ❤️ Bartz for their help and work.
