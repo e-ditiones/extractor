@@ -79,6 +79,7 @@ pip install -r requirements.txt
 python strings_checking.py PATH_TO_THE_ALTO4_DIRECTORY
 ```
 In case you encountered a problem, correct lines or zones errors
+
 3. Transform the data with `alto4_into_TEI.py`
 ```concole
 python alto4_into_TEI.py 'IIIF_GALLICA_ARK' 'NAME_SURNAME_ORCID' 'PUBLISHER' 'LINK_TO_PUBLIHER_INFO' 'AVAILABILITY' -e
