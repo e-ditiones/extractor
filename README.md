@@ -29,14 +29,19 @@ Python script to transform ALTO4 files into XML-TEI files.
 │     └── out
 │           └── ODD.rng
 ├── example
-│     ├── img
-│     │     └── example.jpg
 │     ├── xml
-│     │     ├── standardisation
-│     │     │     └── example.xml
-│     │     └── transformation_TEI
-│     │           ├── extration_img.xml
-│     │           └── output.xml
+│     │     ├── ALTOs
+│     │     │      ├──author_title_date_ID_folio.xml
+│     │     │      ├──…
+│     │     │      └── author_title_date_ID_folio.xml
+│     │     └── TEI
+│     │            ├── author_title_date_ID.xml
+│     │            ├── author_title_date_ID_decorations.xml
+│    	│            └── extraction_img.py
+│     ├── img
+│     │     ├──author_title_date_ID_folio.jpg
+│     │     ├──…
+│     │     └── author_title_date_ID_folio.jpg
 │     └── README.md
 ├── alto4_into_TEI.py
 ├── strings_checking.py
