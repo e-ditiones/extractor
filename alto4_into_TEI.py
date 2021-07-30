@@ -71,7 +71,7 @@ def transformation(ark, editeur, edition, url_edition, segmentationTranscription
 
     # fonction de récupération de la liste des imprimeurs
     if extraction_img:
-        extraction_image(doc_final, titre, editeur, id_facsimile)
+        extraction_image(doc_final, titre, editeur, id_facsimile, ark)
         clean_file(doc_final)
     else:
         clean_file(doc_final)
